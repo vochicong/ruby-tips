@@ -16,6 +16,10 @@
 - super は現在のメソッドがオーバーライドしているメソッドを呼び出す
 - Object クラスから to_s や instance_variables メソッドを継承しているが、to_s をオーバーライドすると綺麗に puts できる
 
+[ブロックの戻り値](block_return_values.ipynb)
+
+- メソッドにブロックを渡すことによって、指示を与えられる
+
 [Mixin](mixin-comparable-enumerable.ipynb)
 
 - `<=>`を定義して、 Comparable モジュールを mixin したら `>, ==, <` が使える。
