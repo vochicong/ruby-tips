@@ -25,6 +25,15 @@
 - `<=>`を定義して、 Comparable モジュールを mixin したら `>, ==, <` が使える。
 - `each`メソッドを定義して、`Enumerable`を mixin したら、コレクションに対する様々なメソッドが使えるようになる。
 
+[camelCaseとsnake_caseの変換](json_camel_snake_case.ipynb)
+
+JSON request params key を camelCase から snake_case への変換は、
+スタンダードなやり方が確定していなさそうだが、選択肢としては
+
+- initializer で deep_transform_keys 変換
+- before_action で transform_keys 変換
+- その他、gem での対応
+
 ## 参考
 
 - [Ruby リファレンス](https://docs.ruby-lang.org/ja/2.4.0/doc/index.html)
