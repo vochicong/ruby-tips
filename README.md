@@ -34,6 +34,13 @@ JSON request params key を camelCase から snake_case への変換は、
 - before_action で transform_keys 変換
 - その他、gem での対応
 
+## [Rubyの`&.method` vs Railsの`try(:method)`](notebooks/ruby_&_vs_rails_try.ipynb)
+
+- xにhogeメソッドがあれば、 x&.hoge と x.try(:hoge) は x.hoge と同じ
+- xにhogeメソッドがなかったら
+  - xがnilの場合、x&.hogeもx.try(:hoge)もnilになる
+  - xがnilでない場合、x&.hogeはエラーとなる一方、x.try(:hoge)はnilになる
+
 ## 参考
 
 - [Ruby リファレンス](https://docs.ruby-lang.org/ja/2.4.0/doc/index.html)
