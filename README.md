@@ -1,6 +1,6 @@
 # Ruby tips
 
-## [クラス・インスタンス・属性](class_instance_attributes.ipynb)
+## [クラス・インスタンス・属性](notebooks/class_instance_attributes.ipynb)
 
 - クラスもオブジェクトである
 - クラス属性もインスタンス属性も `@` で始まるが、別物
@@ -8,7 +8,7 @@
 - インスタンスメソッドの中では `self` が現在のオブジェクトを指すが、
 省けるところでは省いた方が読みやすい
 
-## [クラスの継承](inheritance.ipynb)
+## [クラスの継承](notebooks/inheritance.ipynb)
 
 - サブクラスは親からメソッドや属性を受け継ぐ
 - インスタンス変数は、その値を初期化（アサイン）されるまで存在せず、参照されたらあたいは nil
@@ -16,16 +16,16 @@
 - super は現在のメソッドがオーバーライドしているメソッドを呼び出す
 - Object クラスから to_s や instance_variables メソッドを継承しているが、to_s をオーバーライドすると綺麗に puts できる
 
-## [ブロックの戻り値](block_return_values.ipynb)
+## [ブロックの戻り値](notebooks/block_return_values.ipynb)
 
 - メソッドにブロックを渡すことによって、指示を与えられる
 
-## [Mixin](mixin-comparable-enumerable.ipynb)
+## [Mixin](notebooks/mixin-comparable-enumerable.ipynb)
 
 - `<=>`を定義して、 Comparable モジュールを mixin したら `>, ==, <` が使える。
 - `each`メソッドを定義して、`Enumerable`を mixin したら、コレクションに対する様々なメソッドが使えるようになる。
 
-## [camelCaseとsnake_caseの変換](json_camel_snake_case.ipynb)
+## [camelCaseとsnake_caseの変換](notebooks/json_camel_snake_case.ipynb)
 
 JSON request params key を camelCase から snake_case への変換は、
 スタンダードなやり方が確定していなさそうだが、選択肢としては
