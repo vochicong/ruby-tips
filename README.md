@@ -41,7 +41,17 @@ JSON request params key を camelCase から snake_case への変換は、
   - xがnilの場合、x&.hogeもx.try(:hoge)もnilになる
   - xがnilでない場合、x&.hogeはエラーとなる一方、x.try(:hoge)はnilになる
 
+## [属性ヘ代入するには self 指定が必要](notebooks/attribute_writers.ipynb)
+
+インスタンスメソッドにおいて、
+- @hoge は、インスタンス変数 @hoge を参照します。
+- self.hoge は、インスタンスメソッド hoge を呼び出します。
+- self.hoge = は、インスタンスメソッド hoge= を呼び出します。
+- hoge は、ローカル変数もしくはインスタンスメソッド hoge を呼び出します
+- hoge = は、ローカル変数へ代入します。
+
 ## 参考
 
 - [Ruby リファレンス](https://docs.ruby-lang.org/ja/2.4.0/doc/index.html)
 - [Head First Ruby](http://headfirstruby.com/)
+- [Ruby on Rails Tutorial](https://www.railstutorial.org/book/)
